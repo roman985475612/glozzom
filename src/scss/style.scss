@@ -1,0 +1,17 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import 'fonts';
+@import 'params';
+@import 'mixins';
+@import 'core';
+
+@import 'blocks/navbarTop';
+@import 'blocks/sectionShowcase';
+@import 'blocks/homeIcons';
+@import 'blocks/home-heading';
+@import 'blocks/info';
+@import 'blocks/video-player';
+@import 'blocks/gallery';
+@import 'blocks/newsletter';
+@import 'blocks/main-footer';
+@import 'blocks/form';
