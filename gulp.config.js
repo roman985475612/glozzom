@@ -2,7 +2,7 @@ module.exports = {
     SRC_PATH: 'src',
     DIST_PATH: 'build',
     STYLES_LIBS: [
-        './libs/fa/fontawesome-all.min.css',
+        './node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css',
         './node_modules/baguettebox.js/dist/baguetteBox.min.css',
     ],
     JS_LIBS: [

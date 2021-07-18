@@ -46,7 +46,7 @@ task('copy:html', () => {
 })
 
 task('copy:webfonts', () => {
-    return src('./libs/fa/webfonts/**/*')
+    return src('./node_modules/@fortawesome/fontawesome-free/webfonts/*')
         .pipe(dest(`${DIST_PATH}/webfonts`))
 })
 
