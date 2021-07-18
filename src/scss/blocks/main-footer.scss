@@ -1,4 +1,6 @@
 .main-footer {
     @include section();
+    background: $black;
+    color: $white;
     text-align: center;
 }
