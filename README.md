@@ -1,2 +1,2 @@
-# Mizuxe
-## Landing page on HTML, CSS and JavaScript
+# Glozzom
+## Web site on Bootstap 5
