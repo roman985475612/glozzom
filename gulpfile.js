@@ -85,9 +85,9 @@ task('js', () => {
     return src(`${SRC_PATH}/js/*.js`)
         .pipe(gulpIf(env === 'dev', sourcemaps.init()))
         .pipe(concat('main.min.js', {newLine: ';'}))
-        .pipe(gulpIf(env === 'prod', babel({
-            presets: ["@babel/env"]
-        })))
+        // .pipe(gulpIf(env === 'prod', babel({
+        //     presets: ["@babel/env"]
+        // })))
         .pipe(gulpIf(env === 'prod', uglify()))
         .pipe(gulpIf(env === 'dev', sourcemaps.write()))
         .pipe(dest(`${DIST_PATH}/js`))
@@ -170,7 +170,7 @@ task('build',
             'copy:html', 
             'copy:css', 
             'scss', 
-            // 'copy:js',
+            'copy:js',
             'js', 
             'img', 
             'img:webp', 

@@ -1,7 +1,6 @@
-window.addEventListener('DOMContentLoaded', () => {
-    (function () {
-        const slides = document.querySelectorAll('.slider__item')
-        const activeClass = 'slider__item--visible'
+class Slider {
+    constructor(selector, activeClass) {
+        const slides = document.querySelectorAll(selector)
 
         let index = 0;
 
@@ -12,5 +11,5 @@ window.addEventListener('DOMContentLoaded', () => {
             
             slides[index].classList.add(activeClass)
         }, 3000)
-    })()
-})
+    }
+}

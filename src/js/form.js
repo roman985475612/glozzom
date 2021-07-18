@@ -1,6 +1,5 @@
 class Form {
     constructor(selector) {
-        console.log(selector)
         const form = document.querySelector(selector)
         if (form === null) {
             return false
@@ -32,7 +31,8 @@ class Form {
     validation(form) {
         let patterns = {
             notEmpty: /.+/,
-            email: /^.+@.+\..+$/
+            email: /^.+@.+\..+$/,
+            phone: /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/
         }
     
         let fields = form.querySelectorAll('.form__control')
